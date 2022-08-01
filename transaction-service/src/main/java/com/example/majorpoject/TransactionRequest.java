@@ -17,7 +17,7 @@ public class TransactionRequest {
 
     public boolean validate(){
 
-        if(this.amount<=0 || this.amount==null || this.sender==null || this.receiver==null){
+        if(this.amount<0 || this.amount==null || this.sender==null || this.receiver==null){
             return false;
         }
         return true;
